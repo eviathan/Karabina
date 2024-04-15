@@ -1,0 +1,31 @@
+{
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^com\\.googlecode\\.iterm2$",
+                        "^org\\.vim\\.",
+                        "^com\\.microsoft\\.VSCode$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "description": "Map caps lock to escape in vim",
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "escape"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
